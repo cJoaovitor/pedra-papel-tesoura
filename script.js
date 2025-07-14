@@ -10,11 +10,11 @@ if (players == "como amigo"  ){
   let jogada2 = prompt("segundo jogador, pedra, papel ou tesura").toLowerCase();
   quem_ganhou(jogada1,jogada2);
 }
+
+}while(confirm("deseja jogar novamente?"));
 function sort() {
    let jogadas = ["pedra", "papel", "tesura"];
    let sortmumero = Math.floor(Math.random()*3);
-   alert("a maquina escolheu: ");
-   alert(sortmumero);
    return jogadas[sortmumero].toLowerCase();
 }
 function quem_ganhou(primeirajogada,segundajogada){
@@ -30,8 +30,6 @@ function quem_ganhou(primeirajogada,segundajogada){
            alert("segundo jogador ganhou");
        }
 }
-}while(confirm("deseja jogar novamente?"));
-
 
 
 
